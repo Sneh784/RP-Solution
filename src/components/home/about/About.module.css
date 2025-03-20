@@ -1,0 +1,126 @@
+.Container {
+    margin-top: 30px;
+}
+
+/* Grid Layout for Responsiveness */
+.Section1, .Section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    gap: 2rem;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Box Styling */
+.Box1, .Box2, .Box3, .Box4, .Box5, .Box6 {
+    height: 600px;
+    width: 350px;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+/* Hover Effect: Scale Up + Glow */
+.Box1:hover, .Box2:hover, .Box3:hover, 
+.Box4:hover, .Box5:hover, .Box6:hover {
+    transform: scale(1.05);
+    color: rgb(169, 27, 27);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Animation for Movement */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Adding floating effect to alternate boxes */
+.Box1, .Box3, .Box5 {
+    animation: fadeInUp 0.8s ease-in-out forwards, float 3s infinite ease-in-out;
+}
+
+.Box2, .Box4, .Box6 {
+    animation: fadeInUp 5s ease-in-out forwards, float 3s infinite ease-in-out 0.5s;
+}
+
+/* Fade-in Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Heading & Text Styling */
+.Line1, .Line2, .Line3, .Line4, .Line5, .Line6 {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Sentence1, .Sentence2, .Sentence3, 
+.Sentence4, .Sentence5, .Sentence6 {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Image Styling */
+.image1 img, .image2 img, .image3 img,
+.image4 img, .image5 img, .image6 img {
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    margin-top: -15px;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Image Hover Animation */
+/* .image1 img:hover, .image2 img:hover, .image3 img:hover,
+.image4 img:hover, .image5 img:hover, .image6 img:hover {
+    transform: scale(1.1);
+} */
+
+/* Responsive Design */
+/* @media (max-width: 1200px) {
+    .Box1, .Box2, .Box3, .Box4, .Box5, .Box6 {
+        width: 300px;
+        height: 550px;
+    }
+} */
+
+@media (max-width: 768px) {
+    .Section1, .Section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Box1, .Box2, .Box3, .Box4, .Box5, .Box6 {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .image1 img, .image2 img, .image3 img,
+    .image4 img, .image5 img, .image6 img {
+        height: 200px;
+        width: 200px;
+    }
+}

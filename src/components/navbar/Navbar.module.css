@@ -1,0 +1,121 @@
+/* Navbar Base */
+.Navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Navbar on Scroll */
+.Scrolled {
+    background-color: whitesmoke;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.Logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.Scrolled .Logo{
+    color: black;
+}
+/* Navigation Links */
+.NavLinks {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Default Link Styling (When Background is Transparent) */
+.NavLinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Change Link Color When Navbar is Scrolled */
+.Scrolled .NavLinks a {
+    color: black;
+}
+
+/* Active Link */
+.NavLinks a.active {
+    color: red;
+    font-weight: bold;
+}
+
+/* Button */
+.Button {
+    height: 40px;
+    background-color: rgb(226, 105, 105);
+    width: 150px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Button:hover {
+    color: black;
+    background-color: rgb(145, 235, 253);
+}
+
+/* Hamburger Menu */
+.Hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+.Scrolled .Hamburger{
+    color: black;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .Hamburger {
+        display: block;
+    }
+
+    .NavLinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        padding: 1rem 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .MobileOpen {
+        display: flex;
+    }
+
+    .NavLinks a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .Button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,126 @@
+
+.Service{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #ff9a9e, #f18364, #f00b26, #a18cd1, #fbc2eb);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+}
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.Container {
+    display: flex;
+    margin-top: 80px;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Image Animation */
+.image img {
+    height: 400px;
+    margin-left: 50px;
+    width: 400px;
+    opacity: 0;
+    border-radius: 20px;
+    transform: scale(0.8);
+    animation: zoomFade 1s ease-in-out forwards 0.5s;
+}
+
+.Section2{
+    margin-left: 60px;
+    margin-right: 60px;
+    align-items: center;
+    margin-top: -20px;
+}
+/* Text Animations */
+.Line1 {
+    font-weight: bold;
+    font-size: 38px;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideLeft 1s ease-in-out forwards 0.5s;
+}
+
+.Line2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideRight 1s ease-in-out forwards 0.5s;
+
+}
+
+.Line3 {
+    font-weight: bold;
+    font-size: 38px;
+    animation: bounce 2s infinite;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomFade {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideLeft {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideRight {
+    from { transform: translateX(100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+@media (max-width: 1024px) {
+    .Container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image img{
+        margin-top: -80px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .Section2 {
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .Line1{
+        font-size: 1.5rem;
+    }
+    .Line3 {
+        font-size: 1.5rem;
+        /* margin-top: -30px; */
+       
+    }
+
+    .Line2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+

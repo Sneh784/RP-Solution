@@ -1,0 +1,104 @@
+/* Container */
+.Container {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Image */
+.image img {
+    height: 450px;
+    width: 450px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Box Layout */
+.box1, .box2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Box Styling */
+.Box1, .Box2, .Box3, .Box4 {
+    margin-bottom: 20px;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    padding: 20px;
+    height: 280px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.4s ease-in-out, transform 0.4s ease-in-out;
+    
+    /* Entrance Animation */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1s ease-out forwards;
+}
+
+/* Adding delay for smooth animation */
+.Box1 { animation-delay: 0.2s; }
+.Box2 { animation-delay: 0.4s; }
+.Box3 { animation-delay: 0.6s; }
+.Box4 { animation-delay: 0.8s; }
+
+/* Hover Effects */
+.Box1:hover, .Box2:hover, .Box3:hover, .Box4:hover {
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.6);
+    transform: translateY(-10px) rotate(2deg);
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+    color: rgb(205, 5, 5);
+}
+
+/* Icon Centering */
+.logo1, .logo2, .logo3, .logo4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Text Styling */
+.Name1, .Name2, .Name3, .Name4 {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.Line1, .Line2, .Line3, .Line4 {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* KEYFRAME ANIMATIONS */
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

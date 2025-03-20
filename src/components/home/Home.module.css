@@ -1,0 +1,155 @@
+/* Home Container */
+.Home {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh; /* Ensures the section takes full viewport height */
+    padding: 50px 0;
+    background: url(https://i.pinimg.com/736x/00/c8/fb/00c8fbe31ab8d2f05f3be88717f74fad.jpg) no-repeat center center/cover;
+    z-index: 0;
+    animation: fadeInBackground 1.5s ease-in-out;
+}
+
+/* Background Blur Effect */
+.Home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit; /* Inherit background image */
+    filter: blur(3px); /* Apply blur only to background */
+    z-index: 0;
+    animation: blurFade 1.5s ease-in-out;
+}
+
+/* Flexbox Layout */
+.Container {
+    display: flex;
+    z-index: 2; /* Ensures text and image stay clear */
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+/* Left Side - Text Content */
+.Section1 {
+    color: white;
+    margin-top: -15px;
+    flex: 1;
+    text-align: left;
+    padding-right: 30px; /* Space between text and image */
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInLeft 1s ease-in-out forwards 0.5s;
+}
+
+/* Text Styles */
+.Line1 {
+    font-size: 32px;
+}
+
+.Line2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.Line3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Right Side - Image */
+.Section2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Image img {
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2; /* Ensures image remains clear */
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 1s ease-in-out forwards 0.8s;
+}
+
+/* 📱 Responsive Design (Mobile & Tablets) */
+@media (max-width: 768px) {
+    .Container {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+    }
+
+    .Section1 {
+        align-items: center;
+        text-align: center;
+    }
+
+    .Section2 {
+        justify-content: center;
+        margin-top: 20px; /* Add spacing */
+    }
+
+    .Image img {
+        width: 98%; /* Responsive image */
+        height: auto;
+    }
+}
+
+/* ✨ Keyframe Animations ✨ */
+
+/* Fade In Background */
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Blur Effect */
+@keyframes blurFade {
+    from {
+        filter: blur(8px);
+        opacity: 0;
+    }
+    to {
+        filter: blur(3px);
+        opacity: 1;
+    }
+}
+
+/* Fade In from Left */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Image Zoom In */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
