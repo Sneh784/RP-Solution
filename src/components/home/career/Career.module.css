@@ -79,6 +79,14 @@
     text-align: center;
 }
 
+.Section3{
+    display: flex;
+}
+
+.Image img{
+    height: 250px;
+    width: 250px;
+}
 /* KEYFRAME ANIMATIONS */
 
 /* Slide Up Animation */
@@ -100,5 +108,169 @@
     }
     to {
         opacity: 1;
+    }
+}
+/* Section3 - Main Wrapper */
+/* Section3 - Main Wrapper */
+.Section3 {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section4 - Content Container */
+.Section4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    gap: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* TextBox - Slide-in Animation */
+.TextBox {
+    flex: 1;
+    text-align: left;
+    padding: 10px 20px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1s ease-in-out forwards 0.5s;
+}
+
+/* Slide-in Text Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.Name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Line {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.Line span {
+    color: #d32f2f; /* Highlighted text */
+    font-weight: bold;
+}
+
+/* Join Us Button */
+.JoinButton {
+    padding: 12px 20px;
+    background: #d32f2f;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/* Button Hover Animation */
+.JoinButton:hover {
+    background: #a12727;
+    transform: scale(1.05);
+}
+
+/* Pulse Animation for Button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(211, 47, 47, 0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(211, 47, 47, 0.5);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(211, 47, 47, 0.3);
+    }
+}
+
+/* Image Animation */
+.Image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    animation: bounceIn 1.2s ease-in-out forwards 0.5s;
+    opacity: 0;
+}
+
+/* Bounce-in Effect for Image */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.Image img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .Section4 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .TextBox {
+        text-align: center;
+    }
+
+    .Image img {
+        max-width: 80%;
     }
 }

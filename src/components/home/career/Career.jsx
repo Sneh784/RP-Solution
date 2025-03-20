@@ -51,15 +51,28 @@ function Career() {
       
 
       <div className={styles.Section3}>
-        <div className={styles.Section3Content}>
+        <div className={styles.Section4}>
           <div className={styles.TextBox}>
             <div className={styles.Name}>RP BUSINESS SOLUTIONS LLP.</div>
-            <div className={styles.Line}>Charting Your Path to Success. "Join RPBS, where talent meets opportunity. Explore growth, innovation, and a supportive culture."</div>
+            <div className={styles.Line}>Charting Your Path to Success. "Join RPBS,<br/>
+             where talent meets opportunity. Explore growth, <br/>
+             innovation, and a supportive culture."</div>
           </div>
 
-          <div className={styles.ImageBox}>
+          <div className={styles.Image}>
             <img src="https://www.rpbsolution.com/images/career.jpg" alt="Career at RPBS" />
           </div>
+        </div>
+      </div>
+
+      <div className={styles.Section5}>
+        <div className={styles.Section6}>
+          <div className={styles.Part1}></div>
+          <div className={styles.Part1}></div>
+          <div className={styles.Part1}></div>
+          <div className={styles.Part1}></div>    
+          <div className={styles.Part1}></div>
+          <div className={styles.Part1}></div>
         </div>
       </div>
     </div>
