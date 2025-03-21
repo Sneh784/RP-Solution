@@ -48,15 +48,15 @@ function Career() {
           </div>
         </div>
       </div>
-      
+
 
       <div className={styles.Section3}>
         <div className={styles.Section4}>
           <div className={styles.TextBox}>
             <div className={styles.Name}>RP BUSINESS SOLUTIONS LLP.</div>
-            <div className={styles.Line}>Charting Your Path to Success. "Join RPBS,<br/>
-             where talent meets opportunity. Explore growth, <br/>
-             innovation, and a supportive culture."</div>
+            <div className={styles.Line}>Charting Your Path to Success. "Join RPBS,<br />
+              where talent meets opportunity. Explore growth, <br />
+              innovation, and a supportive culture."</div>
           </div>
 
           <div className={styles.Image}>
@@ -67,13 +67,41 @@ function Career() {
 
       <div className={styles.Section5}>
         <div className={styles.Section6}>
-          <div className={styles.Part1}></div>
-          <div className={styles.Part1}></div>
-          <div className={styles.Part1}></div>
-          <div className={styles.Part1}></div>    
-          <div className={styles.Part1}></div>
-          <div className={styles.Part1}></div>
-        </div>
+          <div className={styles.Part1}>
+            <div className={styles.text1}>Collaborative Environment</div>
+            <div className={styles.Sent1}>At RPBS, collaboration is key. Work alongside diverse talents, pooling unique perspectives to tackle tough problems.</div>
+          </div>
+
+          <div className={styles.Part2}>
+            <div className={styles.text1}>Opportunities for Growth</div>
+            <div className={styles.Sent1}>At RPBS, we invest in you. Grow through mentorship and development opportunities, unlocking your full potential.</div>
+          </div>
+
+          <div className={styles.Part3}>
+            <div className={styles.text1}>Work-Life Balance</div>
+            <div className={styles.Sent1}>At RPBS, we value work-life balance. Enjoy flexibility and prioritize your well-being</div>
+          </div>
+          </div>
+
+          <div className={styles.Section7}>
+          <div className={styles.Part4}>
+            <div className={styles.text1}>Culture of Excellence</div>
+            <div className={styles.Sent1}>At RPBS, excellence is our culture. Push boundaries, challenge norms, and embrace continuous improvement.</div>
+          </div>
+
+          <div className={styles.Part5}>
+            <div className={styles.text1}>Employee Recognition Programs</div>
+            <div className={styles.Sent1}>RPBS values employee contributions with awards, bonuses, and events, fostering motivation.</div>
+          </div>
+
+          <div className={styles.Part6}>
+            <div className={styles.text1}> Professional Development Initiatives</div>
+            <div className={styles.Sent1}>RPBS offers workshops, training, and mentorship for employee growth and skill enhancement.</div>
+          </div>
+
+          </div>
+
+       
       </div>
     </div>
   )

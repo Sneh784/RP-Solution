@@ -274,3 +274,80 @@
         max-width: 80%;
     }
 }
+/* Container */
+.Section6, .Section7{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f0f0f0, #d9e2ec);
+}
+
+/* Section Cards */
+.Part1, .Part2, .Part3, .Part4, .Part5, .Part6 {
+    /* display: flex; */
+    width: 300px;
+    height: 210px;
+    background: linear-gradient(135deg, #4d42ea, #ff53ce);
+    color: white;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    /* font-weight: bold; */
+    /* border-radius: 16px; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 60px;
+}
+
+/* Hover Effects */
+.Part1:hover, .Part2:hover, .Part3:hover, .Part4:hover, .Part5:hover, .Part6:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+}
+
+.Sent1{
+  font-size: 14px;
+  margin-top: 40px;
+} 
+.text1{
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+/* Glow Animation */
+.Part1::before, .Part2::before, .Part3::before, .Part4::before, .Part5::before, .Part6::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 60%);
+    top: -50%;
+    left: -50%;
+    transform: rotate(25deg);
+    transition: all 0.5s ease;
+}
+
+.Part1:hover::before, .Part2:hover::before, .Part3:hover::before, 
+.Part4:hover::before, .Part5:hover::before, .Part6:hover::before {
+    top: -30%;
+    left: -30%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Part1, .Part2, .Part3, .Part4, .Part5, .Part6 {
+        width: 90%;
+    }
+}

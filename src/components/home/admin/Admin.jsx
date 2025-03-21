@@ -23,7 +23,7 @@ function Admin() {
                 
                 {/* Section1 - Contact Information */}
                 <div className={styles.Section1}>
-                    <div className={styles.Name}>Feel Free To Contact – Let’s Create Progress Together</div>
+                    <div className={styles.Sent}>Feel Free To Contact – Let’s Create Progress Together</div>
                     
                     {/* Address */}
                     <div className={styles.Address}>

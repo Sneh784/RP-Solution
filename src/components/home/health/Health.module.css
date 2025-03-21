@@ -1,0 +1,141 @@
+/* Main Container */
+.Health {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+}
+
+/* Inner Wrapper */
+.Container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Section 1: Image and Description */
+.Section1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Image Wrapper */
+.Container1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Text Content */
+.Section2 {
+    flex: 1;
+    max-width: 600px;
+}
+
+.Name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Sent {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Section 3: Services Boxes */
+.Section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.Box1 {
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(244, 36, 36, 0.8);
+    transition: transform 0.3s ease;
+}
+
+.Box1:hover {
+    transform: translateY(-5px);
+    /* color: red; */
+}
+
+.Name1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.Line2 {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Section1 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .Section2 {
+        max-width: 100%;
+    }
+    
+    .Section3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Box1 {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .image img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .Name {
+        font-size: 24px;
+    }
+
+    .Sent {
+        font-size: 14px;
+    }
+
+    .Name1 {
+        font-size: 18px;
+    }
+
+    .Line2 {
+        font-size: 13px;
+    }
+}
