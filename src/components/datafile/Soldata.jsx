@@ -1,4 +1,4 @@
-const Servicedata = {
+const Soldata = {
     imageUrl: "https://www.rpbsolution.com/images/Services.jpg",
     title: "Enhance Your Website's Impact Discover Our Service & Project Ideas",
     description: `RP Business Solutions offers customized software services to meet your
@@ -8,5 +8,5 @@ const Servicedata = {
     highlight: "See What We Offers & What We Provide.!!",
   };
   
-  export default Servicedata;
+  export default Soldata;
   

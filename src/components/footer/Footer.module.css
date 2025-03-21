@@ -1,17 +1,99 @@
-.Container{
-    margin-top: 30px;
-    text-align: center;
-}
+.Footer {
+    background-color: black;
+    /* margin-bottom: 350px; */
+    color: white;
+    margin-top: 20px;
+    height: auto; 
+    padding: 30px 0; 
+    margin: 20px;
+    border-top-left-radius:50px ;
+    border-top-right-radius:50px;
+     /* border-bottom-left-radius:50px ;
+    border-bottom-right-radius:50px;  */
+  }
+  
+  .Section {
+    display: flex;
+    gap: 10%;
+    align-items: flex-start; 
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-.Section{
+  .Section1{
+    /* text-align: center; */
+    padding: 20px;
+    margin-left: 10px;
+  }
+  
+  /* Styling for Section2 */
+  .Section2 {
+    color: rgb(238, 74, 74);
+    width: 100%; /* Ensures it takes the full width */
+    text-align: center; /* Center text and content inside */
+    margin-top: 10px;
+  }
+  .Name{
+    margin-left: 10px;
+  }
+  .Line{
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .Name3{
+    color:rgb(238, 74, 74);
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  .box1{
+    margin-top: 59px;
+    display: flex;
+    gap:4%;
+  }
+  .box2, .box3{
+    display: flex;
+    gap:4%;
+    margin-top: 10px;
+  }
+  .line {
+    width: 100%; /* Full width of Section2 */
+    height: 1px; /* Line thickness */
+    background-color:rgb(248, 242, 242);
+    margin: 0px 0; /* Adds space above and below the line */
+  }
+  
+  .Name {
+    color: rgb(238, 74, 74);
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .No{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap:20%;
+  }
+  
+  .Logo {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    color:rgb(254, 248, 248);
+    transition: color 0.3s ease;
+    margin-bottom: -20px;
+    margin-top: 10px;
+  }
+  
+  .Logo:hover {
+    color: rgb(244, 93, 106); 
+  }
+  
+  
+  .Copy {
     margin-top: 50px;
-}
-
-.Logo1:hover, .Logo2:hover, .Logo3:hover, .Logo4:hover{
-    transform: scale(1.05);
-    color: rgb(236, 75, 75);
-}
+    color:rgb(238, 74, 74);
+    text-align: center;
+    font-size: 14px;
+  }

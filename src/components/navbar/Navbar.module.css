@@ -71,8 +71,8 @@
 }
 
 .Button:hover {
-    color: black;
-    background-color: rgb(145, 235, 253);
+    color: rgb(250, 241, 241);
+    background-color: rgb(8, 120, 143);
 }
 
 /* Hamburger Menu */
