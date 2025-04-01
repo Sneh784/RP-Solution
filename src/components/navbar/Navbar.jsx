@@ -37,11 +37,11 @@ function Navbar() {
       {/* Navigation Links */}
       <div className={`${styles.NavLinks} ${menuOpen ? styles.MobileOpen : ""}`}>
         <Link to="/" className={location.pathname === "/" ? styles.active : ""} onClick={closeMenu}>Home</Link>
-        <Link to="/solution" className={location.pathname === "/solution" ? styles.active : ""} onClick={closeMenu}>Solution</Link>
+        <Link to="/about-us" className={location.pathname === "/about-us" ? styles.active : ""} onClick={closeMenu}>About-Us</Link>
+        {/* <Link to="/solution" className={location.pathname === "/solution" ? styles.active : ""} onClick={closeMenu}>Solution</Link> */}
         <Link to="/service" className={location.pathname === "/service" ? styles.active : ""} onClick={closeMenu}>Service</Link>
-        <Link to="/about-us" className={location.pathname === "/about-us" ? styles.active : ""} onClick={closeMenu}>About Us</Link>
         <Link to="/career" className={location.pathname === "/career" ? styles.active : ""} onClick={closeMenu}>Career</Link>
-        <Link to="/us-health-care" className={location.pathname === "/us-health-care" ? styles.active : ""} onClick={closeMenu}>US Health Care</Link>
+        <Link to="/us-health-care" className={location.pathname === "/us-health-care" ? styles.active : ""} onClick={closeMenu}>US-Health-Care</Link>
         {/* <Link to="/admin" className={location.pathname === "/admin" ? styles.active : ""} onClick={closeMenu}>Admin Login</Link> */}
         <Link to="/admin " className={styles.Button} onClick={closeMenu}>Contact Now</Link>
       </div>

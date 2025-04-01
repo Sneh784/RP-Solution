@@ -1,0 +1,90 @@
+.Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px; 
+    /* background-color: #f9f9f9; */
+}
+
+.Name{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.Sent{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.box2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+   
+}
+
+.Box1 {
+    background: linear-gradient(135deg, rgb(216, 117, 252), rgb(63, 227, 241)); /* Gradient effect */
+    padding: 20px;
+    
+    width: 350px;
+    height: 300px;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 15px;
+    border-top-color: rgb(249, 124, 124);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Box1:hover {
+    background: linear-gradient(135deg, rgb(63, 227, 234),rgb(216, 117, 252)); /* Reverse gradient */
+    transform: scale(1.05); /* Slightly enlarges the box on hover */
+} 
+
+.Word {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.Line {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    line-height: 1.6;
+}
+
+.Butoon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.Butoon:hover {
+    color: rgb(249, 91, 91);
+}

@@ -15,8 +15,7 @@ function Hero() {
 
 
       
-        <div className={styles.Section3}></div>
-        <div className={styles.Section*4}></div>
+       
       </div>
     </div>
   )

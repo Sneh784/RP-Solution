@@ -47,14 +47,16 @@ function Footer() {
            <div className={styles.line}> </div>
             <div className={styles.No}>
            
+            <div className={styles.Copy}>Copyright © 2024 - All rights reserved</div>
             <div className={styles.Logo}>
-            <FaInstagram size={30}/>
-            <IoLogoYoutube size={30}/><FaFacebook size={30}/><AiFillTwitterCircle size={30}/>
-
-
-            </div></div> 
+            <div className={styles.Logo1}><FaInstagram size={30} /></div>
+            <div className={styles.Logo2}><IoLogoYoutube size={30}/></div>
+            <div className={styles.Logo3}><FaFacebook size={30}/></div>
+            <div className={styles.Logo4}><AiFillTwitterCircle size={30}/></div>
+            </div>
+            </div> 
         </div>
-        <div className={styles.Copy}>Copyright © 2024 - All rights reserved</div>
+       
       </div>
     </div>
   )

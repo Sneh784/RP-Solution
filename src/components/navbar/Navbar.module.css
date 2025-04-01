@@ -55,12 +55,13 @@
     font-weight: bold;
 }
 
-/* Button */
+
 .Button {
     height: 40px;
     background-color: rgb(226, 105, 105);
-    width: 150px;
-    border-radius: 20px;
+    width: 150px; /* Default width */
+    border-radius: 15px;
+    border-bottom-right-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,12 +69,20 @@
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+    
+    /* Creating a trapezoid-like effect */
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
 }
 
+.navbar.scrolled .Button {
+    color: white; /* Change text color when scrolled */
+}
+
+/* Hover effect remains the same */
 .Button:hover {
     color: rgb(250, 241, 241);
-    background-color: rgb(8, 120, 143);
 }
+
 
 /* Hamburger Menu */
 .Hamburger {

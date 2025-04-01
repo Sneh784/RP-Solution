@@ -1,0 +1,142 @@
+/* General Styles */
+.Intern {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.Container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.Word {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.Line {
+  font-size: 1.2rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Internship Section */
+.Section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  margin-top: 40px;
+  justify-content: center;
+  margin-left: 110px;
+}
+
+/* Internship Card */
+.Box {
+  position: relative;
+  border-radius: 12px;
+  width: 100%; /* ✅ Responsive width */
+  max-width: 450px; /* ✅ Ensures max width on large screens */
+  height: 500px;
+  box-shadow: 0 4px 10px rgba(237, 97, 97, 0.1);
+  overflow: hidden;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  padding: 20px;
+  z-index: 1;
+  cursor: pointer;
+
+  /* ✅ Dynamic Background Image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Dark overlay effect */
+.Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(252, 153, 153, 0.5); /* ✅ Darker overlay for better readability */
+  opacity: 1;
+}
+
+/* Make text more readable */
+.Content {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6); /* ✅ Better contrast */
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+/* Lift card on hover */
+.Box:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Slide up and fade in text on hover */
+.Box:hover .Content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Header */
+.Header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Sentences */
+.Sent {
+  font-size: 1rem;
+  color: #e5e7eb;
+  margin-bottom: 15px;
+}
+
+/* Lists */
+.Qualifications,
+.Benefits {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 25px;
+}
+
+.List {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+}
+
+.List li {
+  margin-bottom: 5px;
+}
+
+/* ✅ Responsive Adjustments */
+@media (max-width: 768px) {
+  .Intern {
+    padding: 40px 15px;
+  }
+
+  .Box {
+    height: auto;
+    min-height: 450px; /* ✅ Ensures content doesn’t get squished */
+  }
+
+  .Content {
+    padding: 15px;
+  }
+}

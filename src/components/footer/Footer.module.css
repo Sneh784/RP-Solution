@@ -5,7 +5,7 @@
     margin-top: 20px;
     height: auto; 
     padding: 30px 0; 
-    margin: 20px;
+    /* margin: 20px; */
     border-top-left-radius:50px ;
     border-top-right-radius:50px;
      /* border-bottom-left-radius:50px ;
@@ -75,8 +75,12 @@
     justify-content: center;
     gap:20%;
   }
+  .Copy{
+       color: white;
+       margin-top: 20px;
+  }
   
-  .Logo {
+  .Logo {    
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -85,15 +89,48 @@
     margin-bottom: -20px;
     margin-top: 10px;
   }
-  
-  .Logo:hover {
-    color: rgb(244, 93, 106); 
+ 
+  .Logo1:hover {
+    color:rgb(239, 131, 149); 
   }
-  
-  
+  .Logo2:hover{
+     color: red;
+  }
+  .Logo3:hover{
+    color: rgb(23, 173, 232);
+ }
+ .Logo4:hover{
+  color: rgb(51, 51, 235);
+}
+@media (max-width: 768px) {
+  .Section {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center;
+      /* text-align: center; */
+  }
+
+  .box1, .box2, .box3 {
+      flex-direction: column; /* Stacks elements vertically */
+      align-items: center;
+  }
+
+  .No {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .Mail{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
   .Copy {
-    margin-top: 50px;
-    color:rgb(238, 74, 74);
-    text-align: center;
-    font-size: 14px;
+    margin-top: 30px;
+      font-size: 0.9rem;
+      padding-bottom: 10px;
   }
+
+  .Logo {
+      justify-content: center;
+      overflow-x: auto; /* Allows horizontal scrolling */
+  }
+}

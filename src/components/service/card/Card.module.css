@@ -6,29 +6,34 @@
 
 /* Grid Layout for Sections */
 .Section1, .Section2 {
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
-    gap: 20px;
+    gap: 25px;
     margin-bottom: 40px;
 }
 
 /* Box Styling */
 .Box1, .Box2, .Box3, .Box4, .Box5, .Box6 {
     background: white;
-    border-radius: 12px;
+    border-radius: 115px;
+    width: 270px;
+    height: 270px;
     padding: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
+    gap:1.5px;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-.Box1:hover, .Box2:hover, .Box3:hover, .Box4:hover, .Box5:hover, .Box6:hover {
+/* .Box1:hover, .Box2:hover, .Box3:hover, .Box4:hover, .Box5:hover, .Box6:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
+} */
 
 /* Logo Styling */
 .Logo1, .Logo2, .Logo3 {
@@ -39,22 +44,125 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    /* font-size: 50px; */
     color: white;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 /* Name Styling */
-.Name1, .Name2, .Name3 {
-    font-size: 22px;
+.Name1{
+    font-size: 18px;
     font-weight: bold;
     color: #333;
-    margin-bottom: 10px;
+    margin-top: 20px; 
 }
 
 /* Description Text */
-.Sent1, .Sent2, .Sent3 {
-    font-size: 16px;
+.Sent1{
+    font-size: 12px;
+    margin-top: 10px;
     color: #555;
     line-height: 1.5;
+}
+
+.Section3{
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 100%;
+    min-height: 70vh;
+    border-radius: 20px;
+    padding: 50px 0;
+    background: url(https://i.pinimg.com/736x/ab/f2/23/abf223b85ea577a0311a5eb73eb52a31.jpg)no-repeat center center/cover;
+    z-index: 0;
+    /* animation: fadeInBackground 1.5s ease-in-out;  */
+    height: 200px;
+}
+.Section3::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+    /* animation: blurFade 1.5s ease-in-out; */
+}
+.Line{
+    font-weight: bold;
+    font-size: 34px;
+    color: white;
+    float: left;
+    padding: 10px;
+}
+
+.box{
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 30px;
+}
+.box1{
+    width: 250px;
+    height: 280px;
+    align-items: center;
+    background: white;
+    /* border: 2px solid #ff6b6b;  */
+    border-radius: 12px;
+    padding: 30px;
+    font-size: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(117, 2, 2, 0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box2{
+    margin-top: 190px;
+    width: 250px;
+    height: 280px;
+    align-items: center;
+    background: white;
+    /* border: 2px solid #ff6b6b;  */
+    border-radius: 12px;
+    padding: 30px;
+    font-size: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(101, 4, 4, 0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box3{
+    margin-top: 390px;
+    width: 250px;
+    height: 280px;
+    align-items: center;
+    background: white;
+    /* border: 2px solid #ff6b6b; */
+    border-radius: 12px;
+    padding: 30px;
+    font-size: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(112, 4, 4, 0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.line1{
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 10px;
+    
+}
+.sent1{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.Button{
+    margin-top: 15px;
+    font-size: 14px;
+}
+.box4{
+    margin-top: -350px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    gap: 30px;
 }

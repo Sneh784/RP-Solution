@@ -1,0 +1,37 @@
+/* Animated Background */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .Section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+   
+    text-align: center;
+    color: white;
+  
+    /* ✅ Animated Gradient Background */
+    background: linear-gradient(-45deg, #f82f36, #fad0c4, #7fc2e7, #b947dc);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 10s ease-in-out infinite;
+  }
+  
+  /* Text Styling */
+  .Name {
+    margin-top: 130px;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .Line {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: white;
+  }
+  

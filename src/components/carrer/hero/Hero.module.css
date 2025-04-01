@@ -1,0 +1,91 @@
+/* 🌈 Animated Background Gradient */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.Hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a18cd1, #ef7ace);
+    background-size: 300% 300%;
+    animation: gradientBG 8s infinite ease-in-out;
+}
+
+
+.Container {
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px);
+}
+
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.Section1 {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* ✨ Animated Text */
+.Name {
+    color: white;
+    font-weight: bold;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+/* 📜 Sent - Delayed Fade-in */
+.Sent {
+    margin-top: 30px;
+    font-size: 18px;
+    color: white;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.6s forwards;
+}
+
+/* 🔘 Button - Interactive Hover Effect */
+.Button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 220px;
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(45deg, #71c9e1, #fad0c4);
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.3);
+    margin-left: 250px;
+}
+
+/* 🖱️ Button - Glowing Hover Effect */
+.Button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #9139e9, #fad0c4);
+    color: white;
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.6);
+}
+
+/* ⏫ Button - Click Effect */
+.Button:active {
+    transform: scale(0.98);
+}

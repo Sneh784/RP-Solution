@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from '../about-us/hero/Hero'
+import Card from '../about-us/card/Card'
 
 function AboutUSPage() {
   return (
     <div>
-      OOOOOOOOOOOOOOohhhhhhhHHoo
+      <Hero/>
+      <Card/>
     </div>
   )
 }
